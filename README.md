@@ -1,6 +1,6 @@
 # TWiLightMenu++ Boxart CLI
 
-A command-line tool to automatically download and resize boxart images for [TWiLightMenu++](https://github.com/DS-Homebrew/TWiLightMenu).
+A python-based command-line tool to automatically download and resize boxart images for [TWiLightMenu++](https://github.com/DS-Homebrew/TWiLightMenu).
 
 ## 📦 Features
 
