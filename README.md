@@ -1,19 +1,19 @@
-# Twilight Boxart CLI
+# TWiLightMenu++ Boxart CLI
 
-A command-line tool to automatically download and resize boxart images for ROMs used with [TWiLightMenu++](https://github.com/DS-Homebrew/TWiLightMenu).
+A command-line tool to automatically download and resize boxart images for [TWiLightMenu++](https://github.com/DS-Homebrew/TWiLightMenu).
 
 ## 📦 Features
 
-- Scans a directory of ROMs and detects supported systems
+- Scans a directory of games and detects supported systems
 - Calculates SHA1 checksums and looks up official names using No-Intro DAT files
 - Downloads matching boxart images from the [Libretro Thumbnails Repository](https://github.com/libretro-thumbnails/)
 - Automatically resizes images to `128x115` PNGs for use with TWiLightMenu++
-- Supports optional ROM renaming to match No-Intro names *(experimental — see warning below)*
+- Supports optional game renaming to match No-Intro names *(experimental — see warning below)*
 - Logs missing boxart matches to `errors.txt`
 
 ## ⚠️ Warning About Renaming
 
-The `--rename` option is not yet fully tested and **may require manual adjustment of associated `.sav` or `.dsv` save files**. Please make backups of your ROMs and saves before using it.
+The `--rename` option is not yet fully tested and **may require manual adjustment of associated `.sav` or `.dsv` save files**. Please make backups of your games and saves before using it.
 
 ## ✅ Supported Consoles
 
@@ -29,9 +29,9 @@ The `--rename` option is not yet fully tested and **may require manual adjustmen
 python twilight_boxart_cli.py --rom-dir /media/user/SDCARD/games --sdcard-dir /media/user/SDCARD --rename --errors
 ```
 
-- `--rom-dir`: Path to your ROMs directory (can include subfolders by console)
+- `--rom-dir`: Path to your games directory (can include subfolders by console)
 - `--sdcard-dir`: Root of your SD card (used to place boxart and download DATs)
-- `--rename`: Rename ROMs to match official No-Intro names *(optional and experimental)*
+- `--rename`: Rename games to match official No-Intro names *(optional and experimental)*
 - `--errors`: Save a list of missing boxart matches to `errors.txt`
 
 ## 📁 Output
