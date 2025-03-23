@@ -8,8 +8,12 @@ A command-line tool to automatically download and resize boxart images for ROMs 
 - Calculates SHA1 checksums and looks up official names using No-Intro DAT files
 - Downloads matching boxart images from the [Libretro Thumbnails Repository](https://github.com/libretro-thumbnails/)
 - Automatically resizes images to `128x115` PNGs for use with TWiLightMenu++
-- Supports optional ROM renaming to match No-Intro names
+- Supports optional ROM renaming to match No-Intro names *(experimental — see warning below)*
 - Logs missing boxart matches to `errors.txt`
+
+## ⚠️ Warning About Renaming
+
+The `--rename` option is not yet fully tested and **may require manual adjustment of associated `.sav` or `.dsv` save files**. Please make backups of your ROMs and saves before using it.
 
 ## ✅ Supported Consoles
 
@@ -22,12 +26,12 @@ A command-line tool to automatically download and resize boxart images for ROMs 
 ## 🛠️ Usage
 
 ```bash
-python twilight_boxart_cli.py --rom-dir roms --sdcard-dir /media/user/SDCARD --rename --errors
+python twilight_boxart_cli.py --rom-dir /media/user/SDCARD/games --sdcard-dir /media/user/SDCARD --rename --errors
 ```
 
-- `--rom-dir`: Path to your ROMs directory
+- `--rom-dir`: Path to your ROMs directory (can include subfolders by console)
 - `--sdcard-dir`: Root of your SD card (used to place boxart and download DATs)
-- `--rename`: Rename ROMs to match official No-Intro names
+- `--rename`: Rename ROMs to match official No-Intro names *(optional and experimental)*
 - `--errors`: Save a list of missing boxart matches to `errors.txt`
 
 ## 📁 Output
