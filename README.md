@@ -15,14 +15,6 @@ A python-based command-line tool to automatically download and resize boxart ima
 
 The `--rename` option is not yet fully tested and **may require manual adjustment of associated `.sav` or `.dsv` save files**. Please make backups of your games and saves before using it.
 
-## ✅ Supported Consoles
-
-- Nintendo DS / DSi
-- Game Boy / Color / Advance
-- NES, SNES
-- Sega Genesis / Game Gear / Master System
-- TurboGrafx-16, Neo Geo Pocket, WonderSwan, Atari
-
 ## 🛠️ Usage
 
 ```bash
